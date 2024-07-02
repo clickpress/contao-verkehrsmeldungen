@@ -1,0 +1,52 @@
+{% extends "@Contao/content_element/_base.html.twig" %}
+
+{% block content %}
+
+    {% if error %}
+        {{ error }}
+    {% else %}
+
+        <h2>Linie {{ linie }}</h2>
+        {% if minifahrplan %}
+        <a href="{{ minifahrplanLink }}" target="_blank">hier kommen Sie zum Minifahrplan</a>
+        {% endif %}
+        <br><br>
+        {% if ausfaelleAnzahl < 1 %}
+            {% if rvk|length<1 %}
+                <p>Aktuelle Verkehrsinformationen für diese Linie erhalten Sie beim <a href="https://www.rvk.de/fahrplaene-co/verkehrsmeldungen" target="_blank">Linienbetreiber RVK</a>.</p>
+            {% else %}
+                <p>Derzeit liegen uns keine Meldungen vor.</p>
+            {% endif %}
+        {% else %}
+            <div class="fahrtausfaelle">
+                {% for ausfall in ausfaelle %}
+                    <div class="ausfall">
+                        <h3 class="time">
+                            <span>{{ ausfall.title }}</span>
+                        </h3>
+                        {% if ausfall.entrytext %}
+                        <div class="ausfallinfo">
+                            {{ ausfall.entrytext|raw }}
+                        </div>
+                        {% endif %}
+                        {% if (ausfall.entrytext and ausfall.text) %}
+                        <hr class="blue">
+                        {% endif %}
+                        {% if ausfall.text %}
+                            <div class="linie">
+                                <div class="info">
+                                    {{ ausfall.text|raw }}
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+    {% endif %}
+{% endblock %}
+
+
+
+

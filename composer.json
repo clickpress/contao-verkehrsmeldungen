@@ -1,0 +1,23 @@
+{
+  "name": "clickpress/contao-verkehrsmeldungen",
+  "description": "Verkehrsmeldungen Bundle for Contao",
+  "type": "contao-bundle",
+  "license": "proprietary",
+  "require": {
+    "contao/core-bundle": "^5.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Clickpress\\ContaoVerkehrsmeldungen\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "stefansl",
+      "email": "ssl@clickpress.de"
+    }
+  ],
+  "extra": {
+    "contao-manager-plugin": "Clickpress\\ContaoVerkehrsmeldungen\\ContaoManager\\Plugin"
+  }
+}

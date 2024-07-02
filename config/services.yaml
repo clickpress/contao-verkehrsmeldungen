@@ -1,0 +1,13 @@
+services:
+  _defaults:
+    autoconfigure: true
+    autowire: true
+
+  Clickpress\ContaoVerkehrsmeldungen\:
+    resource: ../src
+
+  Clickpress\ContaoVerkehrsmeldungen\Controller\:
+    resource: ../src/Controller
+    exclude: ../src/{FrontendModule}
+    tags: [ 'controller.service_arguments' ]
+

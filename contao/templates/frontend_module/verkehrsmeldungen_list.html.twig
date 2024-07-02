@@ -1,0 +1,12 @@
+{% extends "@Contao/content_element/_base.html.twig" %}
+
+{% block content %}
+    <div class="fahrplan-wrapper">
+        {% for category in linie %}
+            <a  class="download{%  if category.count > 0 %} show-batch{% endif %}"
+                data-icon="arrow-r" data-count="{{ category.count }}"
+                data-iconpos="right" data-mini="true" data-inline="true"
+                data-role="button" href="verkehrsinformationen-detail.html?linie={{ category.linie }}">Linie {{ category.linie }}</a>
+        {% endfor %}
+    </div>
+{% endblock %}
