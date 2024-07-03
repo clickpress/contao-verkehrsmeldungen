@@ -60,7 +60,7 @@ class VerkehrsmeldungenDetailController extends AbstractFrontendModuleController
         $htmlHeadBag->setTitle('Linie ' . $arrCat['linie']);
 
         $template->linie = $arrCat['linie'];
-
+        $template->minifahrplanLink = null;
 
         if ($arrCat['addEnclosure']) {
             $objFile = FilesModel::findByUuid($arrCat['enclosure']);
@@ -80,6 +80,8 @@ class VerkehrsmeldungenDetailController extends AbstractFrontendModuleController
                 AND published=? ORDER BY title ASC"
         )->execute($arrCat['id'], 1);
 
+
+        $arrAusfaelle = [];
         while ($objFahrt->next()) {
 
             $arrTemp = $objFahrt->row();
