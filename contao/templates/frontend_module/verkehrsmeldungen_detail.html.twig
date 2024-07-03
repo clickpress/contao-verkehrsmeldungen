@@ -12,7 +12,7 @@
         {% endif %}
         <br><br>
         {% if ausfaelleAnzahl < 1 %}
-            {% if rvk|length<1 %}
+            {% if rvk %}
                 <p>Aktuelle Verkehrsinformationen für diese Linie erhalten Sie beim <a href="https://www.rvk.de/fahrplaene-co/verkehrsmeldungen" target="_blank">Linienbetreiber RVK</a>.</p>
             {% else %}
                 <p>Derzeit liegen uns keine Meldungen vor.</p>
