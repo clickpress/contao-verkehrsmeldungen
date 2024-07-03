@@ -6,7 +6,7 @@
             <a  class="download{%  if category.count > 0 %} show-batch{% endif %}"
                 data-icon="arrow-r" data-count="{{ category.count }}"
                 data-iconpos="right" data-mini="true" data-inline="true"
-                data-role="button" href="verkehrsinformationen-detail.html?linie={{ category.linie }}">Linie {{ category.linie }}</a>
+                data-role="button" href="{{ jumpTo }}?linie={{ category.linie }}">Linie {{ category.linie }}</a>
         {% endfor %}
     </div>
 {% endblock %}

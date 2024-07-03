@@ -3,7 +3,7 @@
 /**
  * Add palettes to tl_module
  */
-$GLOBALS['TL_DCA']['tl_module']['palettes']['verkehrsmeldungen_list']   = '{title_legend},name,headline,type;{config_legend},fahrtausfaelle_readerModule;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
+$GLOBALS['TL_DCA']['tl_module']['palettes']['verkehrsmeldungen_list']   = '{title_legend},name,headline,type;{config_legend},fahrtausfaelle_readerModule;{redirect_legend},jumpTo;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
 $GLOBALS['TL_DCA']['tl_module']['palettes']['verkehrsmeldungen_detail'] = '{title_legend},name,headline,type;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
 $GLOBALS['TL_DCA']['tl_module']['palettes']['verkehrsmeldungen_page']   = '{title_legend},name,headline,type;{config_legend},faq_categories;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
 
