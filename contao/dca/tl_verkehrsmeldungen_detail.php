@@ -220,7 +220,7 @@ $GLOBALS['TL_DCA']['tl_verkehrsmeldungen_detail'] = array
             'exclude'                 => true,
             'inputType'               => 'text',
             'eval'                    => array('rgxp'=>'alnum', 'unique'=>true, 'spaceToUnderscore'=>true, 'maxlength'=>128, 'tl_class'=>'w50'),
-            'sql'                     => "varchar(128) COLLATE utf8_bin NOT NULL default ''"
+            'sql'                     =>  "varchar(255) BINARY NOT NULL default ''"
         ),
         'author' => array
         (
