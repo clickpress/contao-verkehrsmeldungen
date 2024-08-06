@@ -54,30 +54,29 @@ $GLOBALS['TL_DCA']['tl_verkehrsmeldungen_category'] =
             [
 			'edit' =>
                 [
-				'label'               => &$GLOBALS['TL_LANG']['tl_verkehrsmeldungen_category']['edit'],
-				'href'                => 'table=tl_verkehrsmeldungen_detail',
-				'icon'                => 'edit.gif',
-				'attributes'          => 'class="contextmenu"'
+			'label'               => &$GLOBALS['TL_LANG']['tl_verkehrsmeldungen_category']['edit'],
+			'href'                => 'table=tl_verkehrsmeldungen_detail',
+			'icon'                => 'edit.gif',
+			'attributes'          => 'class="contextmenu"'
                 ],
 			'editheader' =>
                 [
-				'label'               => &$GLOBALS['TL_LANG']['tl_verkehrsmeldungen_category']['editheader'],
-				'href'                => 'act=edit',
-				'icon'                => 'header.gif',
-				'attributes'          => 'class="edit-header"'
+			'label'               => &$GLOBALS['TL_LANG']['tl_verkehrsmeldungen_category']['editheader'],
+			'href'                => 'act=edit',
+			'icon'                => 'header.gif',
+			'attributes'          => 'class="edit-header"'
                 ],
 			'copy' =>
                 [
-				'label'               => &$GLOBALS['TL_LANG']['tl_verkehrsmeldungen_category']['copy'],
-				'href'                => 'act=copy',
-				'icon'                => 'copy.gif',
+			'label'               => &$GLOBALS['TL_LANG']['tl_verkehrsmeldungen_category']['copy'],
+			'href'                => 'act=copy',
+			'icon'                => 'copy.gif',
                 ],
 			'delete' =>
                 [
-				'label'               => &$GLOBALS['TL_LANG']['tl_verkehrsmeldungen_category']['delete'],
-				'href'                => 'act=delete',
-				'icon'                  => 'delete.gif',
-                'attributes'                => 'onclick="if (!confirm(\'' . ($GLOBALS['TL_LANG']['MSC']['deleteConfirm'] ?? null) . '\')) return false; Backend.getScrollOffset();"',
+			'href'                => 'act=toggle&amp;field=published',
+			'icon'                => 'visible.svg',
+			'showInHeader'        => true
                 ],
             'toggle' =>
                 [
