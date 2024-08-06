@@ -78,9 +78,9 @@ $GLOBALS['TL_DCA']['tl_verkehrsmeldungen_detail'] = array
             ),
             'toggle' => array
             (
-                'label'               => &$GLOBALS['TL_LANG']['tl_verkehrsmeldungen_detail']['toggle'],
-                'icon'                => 'visible.gif',
-                'attributes'          => 'onclick="Backend.getScrollOffset();return AjaxRequest.toggleVisibility(this,%s)"',
+		'href'                => 'act=toggle&amp;field=published',
+		'icon'                => 'visible.svg',
+		'showInHeader'        => true
             ),
             'show' => array
             (
