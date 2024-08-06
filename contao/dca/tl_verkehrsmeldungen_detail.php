@@ -276,9 +276,10 @@ $GLOBALS['TL_DCA']['tl_verkehrsmeldungen_detail'] = array
             'exclude'                 => true,
             'filter'                  => true,
             'flag'                    => 1,
-            'inputType'               => 'checkbox',
-            'eval'                    => array('doNotCopy'=>true),
-            'sql'                     => "char(1) NOT NULL default ''"
+	    'toggle' => true,
+	    'inputType' => 'checkbox',
+            'eval' => array('doNotCopy'=>true),
+	    'sql' => ['type' => 'boolean', 'default' => false],
         ),
         'start' => array
         (
