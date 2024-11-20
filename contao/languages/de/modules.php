@@ -25,6 +25,7 @@ $GLOBALS['TL_LANG']['MOD']['verkehrsmeldungen_detail'] = array('Verkehrsmeldunge
 /**
  * Front end modules
  */
+$GLOBALS['TL_LANG']['FMD']['revg'] = 'Revg';
 $GLOBALS['TL_LANG']['FMD']['verkehrsmeldungen']       = 'Verkehrsmeldungen';
 $GLOBALS['TL_LANG']['FMD']['verkehrsmeldungen_list']   = array('Verkehrsmeldungen-Liste', 'Fügt der Seite eine Liste der Verkehrsmeldungen hinzu.');
 $GLOBALS['TL_LANG']['FMD']['verkehrsmeldungen_detail'] = array('Verkehrsmeldungen-Leser', 'Stellt die Details der Verkehrsmeldungen dar');
