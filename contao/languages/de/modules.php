@@ -28,5 +28,3 @@ $GLOBALS['TL_LANG']['MOD']['verkehrsmeldungen_detail'] = array('Verkehrsmeldunge
 $GLOBALS['TL_LANG']['FMD']['verkehrsmeldungen']       = 'Verkehrsmeldungen';
 $GLOBALS['TL_LANG']['FMD']['verkehrsmeldungen_list']   = array('Verkehrsmeldungen-Liste', 'Fügt der Seite eine Liste der Verkehrsmeldungen hinzu.');
 $GLOBALS['TL_LANG']['FMD']['verkehrsmeldungen_detail'] = array('Verkehrsmeldungen-Leser', 'Stellt die Details der Verkehrsmeldungen dar');
-
-?>

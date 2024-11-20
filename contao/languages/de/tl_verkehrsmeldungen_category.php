@@ -51,5 +51,3 @@ $GLOBALS['TL_LANG']['tl_verkehrsmeldungen_category']['edit']       = ['Linie bea
 $GLOBALS['TL_LANG']['tl_verkehrsmeldungen_category']['editheader'] = ['Linie-Einstellungen bearbeiten', 'Einstellungen der Linie ID %s bearbeiten'];
 $GLOBALS['TL_LANG']['tl_verkehrsmeldungen_category']['copy']       = ['Linie duplizieren', 'Linie ID %s duplizieren'];
 $GLOBALS['TL_LANG']['tl_verkehrsmeldungen_category']['delete']     = ['Linie löschen', 'Linie ID %s löschen'];
-
-?>
