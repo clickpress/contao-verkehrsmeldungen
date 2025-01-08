@@ -9,7 +9,7 @@ $GLOBALS['TL_DCA']['tl_verkehrsmeldungen_category'] =
         'config' =>
             [
                 'dataContainer' => DC_Table::class,
-                'ctable' => 'tl_verkehrsmeldungen_detail',
+                'ctable' => ['tl_verkehrsmeldungen_detail'],
                 'switchToEdit' => true,
                 'enableVersioning' => true,
                 'sql' =>
