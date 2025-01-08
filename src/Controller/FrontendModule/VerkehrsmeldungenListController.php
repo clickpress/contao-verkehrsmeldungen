@@ -36,7 +36,7 @@ class VerkehrsmeldungenListController extends AbstractFrontendModuleController
         $this->rootDir = System::getContainer()->getParameter('kernel.project_dir');
     }
 
-    public function isFrontend()
+    public function isFrontend(): bool
     {
         return $this->scopeMatcher->isFrontendRequest($this->requestStack->getCurrentRequest());
     }
@@ -45,9 +45,7 @@ class VerkehrsmeldungenListController extends AbstractFrontendModuleController
      * @param FragmentTemplate $template
      * @param ModuleModel $model
      * @param Request $request
-     * @param $arrLinie
      * @return Response
-     * @throws Exception
      */
     protected function getResponse(FragmentTemplate $template, ModuleModel $model, Request $request): Response
     {
